@@ -11,6 +11,11 @@ module.exports = {
         "sourceType": "module",
     },
     "rules": {
-      "no-console": ["error", { allow: ["warn", "error"] }]
+      "no-console": ["error", { allow: ["warn", "error"] }],
+      "no-magic-numbers": ["error", {
+        "ignore": [0, 1],
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true
+      }]
     }
 }
